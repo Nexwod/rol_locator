@@ -1,0 +1,32 @@
+{% extends "base.html"%}
+
+{%block content%}
+
+<div class="container m-4">
+    <br>
+
+    <h1>Realities of Life Point Details</h1><br><br>
+    <div class="row">
+        <div class="col-md">
+    <h3>{{RolPoints.region}}</h3>
+    <p> <strong>Address : </strong> <br>{{RolPoints.address}}</p>
+    
+    <p><strong>Date/Time : </strong> <br> {{RolPoints.date_time}}</p>
+    <p><strong>Co-ordinator : </strong> <br> {{RolPoints.co_ordinator}}</p>
+    <p><strong>Contact : </strong> <br>{{RolPoints.contact}}</p>
+</div>
+<div class="col-md " style="background-color: rgb(201, 202, 202);">
+    {% if RolPoints.image %}
+    <p> <img src="{{RolPoints.image.url}}" class="d-block w-100 mr-4 px-2 pt-4 pb-2" alt=""> </p>
+    <p class="text-center" style="color: black; font-weight: bold;">Google Map Image</p>
+    {%endif%}
+</div>
+</div>
+    {% if request.user.is_superuser %}
+    <a class="btn my-2" style="background-color: #1C1B4F; color: aliceblue;" href="/locator/Rol_update/{{RolPoints.id}}">Update ROL Point</a>
+    
+    {%endif%}
+    
+</div>
+
+{% endblock %}

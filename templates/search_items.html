@@ -1,0 +1,21 @@
+{%extends "base.html"%}
+{%block content%}
+
+
+<div class="container my-4 ">
+    <h2 class="text-center my-2">Close Realities of life points</h2>
+    {%for i in results%}
+    
+    <h4>{{i.region}}</h4>
+    <div class="row">
+        <div class="col-10">
+    <p><em>{{i.address}}</em></p></div>
+    <div class="col-2">
+    <a class="btn btn-sm px-4 float-end"  style="background-color: #1C1B4F; color: aliceblue; border-radius: 20px;" href="/locator/details/{{i.id}}">view</a></div></div>
+    <hr>
+    {% endfor %}
+    </div>
+    
+    </div>
+
+{%endblock%}

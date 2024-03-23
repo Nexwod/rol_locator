@@ -1,0 +1,15 @@
+{% extends "base.html"%}
+
+{%block content%}
+
+<div class="container my-4">
+    <h1>Update Realities of Life</h1>
+    <form action="", method="POST">
+        {%csrf_token%}
+        {{form.as_p}}
+        <input class="btn text-center btn-md-lg " style="background-color: #1C1B4F; color: aliceblue;" type="submit", value="Save"> 
+        </form>
+    </div>
+
+
+{% endblock %}

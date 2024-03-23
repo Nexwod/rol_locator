@@ -1,0 +1,14 @@
+{% extends "base.html"%}
+
+{%block content%}
+
+<div class="container my-4 ">
+    <h2 class="text-center">Locate a ROL Point</h2>
+    <form action="/locator/search_items", role="search", method="GET">
+     {{form.as_p}}
+   <input class="btn text-center btn-lg" style="background-color: #1C1B4F; color: aliceblue;" type="submit", value="Search"> 
+    </form>
+</div>
+
+
+{% endblock %}
