@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 {% load static %}
-<html lang="en">
+<html lang="en" style="overflow-x: hidden;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,7 @@
   
     <title>Realities of Life Points | {% block title %}{% endblock title %}</title>
 </head>
-<body>
+<body class="overflow-x:hidden" >
     <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-success">
         <div class="container-fluid">
             <a href="#"><img src="{% static 'images/logo.jpg' %}" alt=""></a>
@@ -52,23 +52,23 @@
     {% endblock content%}
 
 
-<footer style="background-color: rgb(201, 202, 202);">
+<footer class="text-light" style="background-color: rgb(80, 80, 80);">
     <div class="container">
         <footer class="py-5">
           <div class="row">
             <div class="col-12 ">
               <h5 class="mx-4">Section</h5>
               <ul class="nav flex-column flex-sm-row">
-                <li class="nav-item mb-2 mx-4 "><a href="/locator" class="nav-link text-dark p-0 text-body-secondary">Home</a></li>
-                <li class="nav-item mb-2 mx-4"><a href="#" class="nav-link p-0  text-dark text-body-secondary">Vision</a></li>
-                <li class="nav-item mb-2 mx-4"><a href="#" class="nav-link p-0 text-dark text-body-secondary">Mission</a></li>
-                <li class="nav-item mb-2 mx-4"><a href="#" class="nav-link p-0 text-dark text-body-secondary">Leadership </a></li><li class="nav-item mb-2 mx-4"><a href="#" class="nav-link p-0 text-dark text-body-secondary">Core Values</a></li>
-                <li class="nav-item mb-2 mx-4"><a href="#" class="nav-link p-0 text-dark text-body-secondary">Colleges</a></li>
+                <li class="nav-item mb-2 mx-4 "><a href="/locator" class="nav-link text-light p-0 text-body-secondary">Home</a></li>
+                <li class="nav-item mb-2 mx-4"><a href="#" class="nav-link p-0  text-light text-body-secondary">Vision</a></li>
+                <li class="nav-item mb-2 mx-4"><a href="#" class="nav-link p-0 text-light text-body-secondary">Mission</a></li>
+                <li class="nav-item mb-2 mx-4"><a href="#" class="nav-link p-0 text-light text-body-secondary">Leadership </a></li><li class="nav-item mb-2 mx-4"><a href="#" class="nav-link p-0 text-light text-body-secondary">Core Values</a></li>
+                <li class="nav-item mb-2 mx-4"><a href="#" class="nav-link p-0 text-light text-body-secondary">Colleges</a></li>
               </ul>
             </div>
       
       
-          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <div class="d-flex flex-column text-light flex-sm-row justify-content-between py-4 my-4 border-top">
             <p>&copy; 2024 Company, Inc. All rights reserved.</p>
             <ul class="list-unstyled d-flex ">
               <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>

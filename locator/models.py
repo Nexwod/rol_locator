@@ -12,6 +12,7 @@ class RolPoints(models.Model):
     co_ordinator = models.CharField(max_length = 200, blank = True)
     contact = models.CharField(max_length = 14, blank = True)
     date_time = models.TextField(blank = True)
+    google_map_url = models.TextField(blank=True)
 
     # def get_absolute_url(self):
     #     return reverse("locator:all_points", kwargs={id : self.id})

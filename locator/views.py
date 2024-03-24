@@ -39,7 +39,7 @@ def Rol_register_update_view(request, id):
 
 
 def all_points_view(request, *args, **kwargs):
-    obj_list = RolPoints.objects.all()
+    obj_list = RolPoints.objects.order_by('-id')
 
     context = {
         "RolPoints":obj_list

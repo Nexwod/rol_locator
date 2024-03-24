@@ -11,18 +11,20 @@ class RolForm(forms.ModelForm):
         fields = [
             'region',
             'address',
-            'image',
+            # 'image',
             'co_ordinator',
             'contact',
-            'date_time'
+            'date_time',
+            'google_map_url'
         ]
         widgets = {
             'region':forms.TextInput(attrs={'class':'form-control'}),
             'address':forms.TextInput(attrs={'class':'form-control'}),
-            'image':forms.FileInput(attrs={'class':'form-control'}),
+            # 'image':forms.FileInput(attrs={'class':'form-control'}),
             'co_ordinator':forms.TextInput(attrs={'class':'form-control'}),
             'contact':forms.NumberInput(attrs={'class':'form-control'}),
-            'date_time':forms.TextInput(attrs={'class':'form-control'})
+            'date_time':forms.TextInput(attrs={'class':'form-control'}),
+            'google_map_url':forms.TextInput(attrs={'class':'form-control'})
             
         }
 
